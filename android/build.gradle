@@ -122,10 +122,13 @@ dependencies {
   //noinspection GradleDynamicVersion
   implementation "com.facebook.react:react-native:+"
 
-  // Tensorflow Lite .aar (includes C API via prefabs)
+  // Tensorflow Lite .aar (includes C API via prefabs)  
   implementation "org.tensorflow:tensorflow-lite:2.13.0"
+  implementation "org.tensorflow:tensorflow-lite-api:2.13.0"
   extractHeaders("org.tensorflow:tensorflow-lite:2.13.0")
   extractSO("org.tensorflow:tensorflow-lite:2.13.0")
+  extractHeaders("org.tensorflow:tensorflow-lite-api:2.13.0")
+  extractSO("org.tensorflow:tensorflow-lite-api:2.13.0")
 }
 
 task extractAARHeaders {

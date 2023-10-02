@@ -24,8 +24,8 @@ add_library(
   ../cpp/jsi/Promise.cpp
   ../cpp/jsi/TypedArray.cpp
   # TODO: Uncomment this when tensorflow-lite C/C++ API can be successfully built/linked here
-  #../cpp/TensorflowPlugin.cpp
-  #../cpp/TensorHelpers.cpp
+  ../cpp/TensorflowPlugin.cpp
+  ../cpp/TensorHelpers.cpp
   src/main/cpp/Tflite.cpp
 )
 
